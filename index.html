@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2> Random Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i></button>
+                <span id="custom-tooltip">copied!</sapn>
+            </div>
+                <div class="settings">
+                    <div class="setting">
+                        <label for="password">Password Length</label>
+                        <input type="number" name="" id="length" max="20" min="4" value="10">
+                    </div>
+                    <div class="setting">
+                        <label for="">Include Uppercase Letters</label>
+                        <input type="checkbox"  id="Uppercase" checked>
+                    </div>
+                    <div class="setting">
+                        <label for="">Include Lowercase Letters</label>
+                        <input type="checkbox"  id="Lowercase" checked>
+                    </div>
+                    <div class="setting">
+                        <label for="">Include Numbers</label>
+                        <input type="checkbox"  id="number" checked>
+                    </div>
+                    <div class="setting">
+                        <label for="">Include Symbols</label>
+                        <input type="checkbox"  id="Symbols" checked>
+                    </div>
+                </div>
+              <button class="btn btn-lg" id="generate">Generate Password</button>
+              
+        </div>
+       
+    </div>
+    <span id="blank-text"> ! Include Something to Generate</span>
+
+    <footer>Made by PJ</footer>
+    <script src="index.js"></script>
+</body>
+</html>
